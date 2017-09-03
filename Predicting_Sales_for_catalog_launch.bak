@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.5">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\aaror\Documents\Data Science Courses\Udacity_Data_Analysis\Business Analyst\Predict-Sales-For-A-Catalog-Launch-master\Predict-Sales-For-A-Catalog-Launch-master\Detailed_List_of_All_The_Customers.xlsx|`p1-customers$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Detailed_List_of_All_The_Customers.xlsx
+Table=`p1-customers$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="255" source="File: C:\Users\aaror\Documents\Data Science Courses\Udacity_Data_Analysis\Business Analyst\Predict-Sales-For-A-Catalog-Launch-master\Predict-Sales-For-A-Catalog-Launch-master\Detailed_List_of_All_The_Customers.xlsx|`p1-customers$`" type="V_String" />
+            <Field name="Customer Segment" size="255" source="File: C:\Users\aaror\Documents\Data Science Courses\Udacity_Data_Analysis\Business Analyst\Predict-Sales-For-A-Catalog-Launch-master\Predict-Sales-For-A-Catalog-Launch-master\Detailed_List_of_All_The_Customers.xlsx|`p1-customers$`" type="V_String" />
+            <Field name="Customer ID" source="File: C:\Users\aaror\Documents\Data Science Courses\Udacity_Data_Analysis\Business Analyst\Predict-Sales-For-A-Catalog-Launch-master\Predict-Sales-For-A-Catalog-Launch-master\Detailed_List_of_All_The_Customers.xlsx|`p1-customers$`" type="Double" />
+            <Field name="Address" size="255" source="File: C:\Users\aaror\Documents\Data Science Courses\Udacity_Data_Analysis\Business Analyst\Predict-Sales-For-A-Catalog-Launch-master\Predict-Sales-For-A-Catalog-Launch-master\Detailed_List_of_All_The_Customers.xlsx|`p1-customers$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\aaror\Documents\Data Science Courses\Udacity_Data_Analysis\Business Analyst\Predict-Sales-For-A-Catalog-Launch-master\Predict-Sales-For-A-Catalog-Launch-master\Detailed_List_of_All_The_Customers.xlsx|`p1-customers$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\aaror\Documents\Data Science Courses\Udacity_Data_Analysis\Business Analyst\Predict-Sales-For-A-Catalog-Launch-master\Predict-Sales-For-A-Catalog-Launch-master\Detailed_List_of_All_The_Customers.xlsx|`p1-customers$`" type="V_String" />
+            <Field name="ZIP" source="File: C:\Users\aaror\Documents\Data Science Courses\Udacity_Data_Analysis\Business Analyst\Predict-Sales-For-A-Catalog-Launch-master\Predict-Sales-For-A-Catalog-Launch-master\Detailed_List_of_All_The_Customers.xlsx|`p1-customers$`" type="Double" />
+            <Field name="Avg Sale Amount" source="File: C:\Users\aaror\Documents\Data Science Courses\Udacity_Data_Analysis\Business Analyst\Predict-Sales-For-A-Catalog-Launch-master\Predict-Sales-For-A-Catalog-Launch-master\Detailed_List_of_All_The_Customers.xlsx|`p1-customers$`" type="Double" />
+            <Field name="Store Number" source="File: C:\Users\aaror\Documents\Data Science Courses\Udacity_Data_Analysis\Business Analyst\Predict-Sales-For-A-Catalog-Launch-master\Predict-Sales-For-A-Catalog-Launch-master\Detailed_List_of_All_The_Customers.xlsx|`p1-customers$`" type="Double" />
+            <Field name="Responded to Last Catalog" size="255" source="File: C:\Users\aaror\Documents\Data Science Courses\Udacity_Data_Analysis\Business Analyst\Predict-Sales-For-A-Catalog-Launch-master\Predict-Sales-For-A-Catalog-Launch-master\Detailed_List_of_All_The_Customers.xlsx|`p1-customers$`" type="V_String" />
+            <Field name="Avg Num Products Purchased" source="File: C:\Users\aaror\Documents\Data Science Courses\Udacity_Data_Analysis\Business Analyst\Predict-Sales-For-A-Catalog-Launch-master\Predict-Sales-For-A-Catalog-Launch-master\Detailed_List_of_All_The_Customers.xlsx|`p1-customers$`" type="Double" />
+            <Field name="# Years as Customer" source="File: C:\Users\aaror\Documents\Data Science Courses\Udacity_Data_Analysis\Business Analyst\Predict-Sales-For-A-Catalog-Launch-master\Predict-Sales-For-A-Catalog-Launch-master\Detailed_List_of_All_The_Customers.xlsx|`p1-customers$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings>
+        <Position x="270" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">Avg Num Products Purchased</Value>
+          <Value name="y var">Avg Sale Amount</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">True</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">Name</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="366" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\aaror\AppData\Local\Temp\Engine_4824_9aee79386c304d14a8d75e3ef7fa6947_\Engine_18528_cf089a04212c439ab326994d0d1a01a1_.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings>
+        <Position x="270" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">Avg Sale Amount</Value>
+          <Value name="y var">Customer Segment</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">True</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">Name</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="366" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\aaror\AppData\Local\Temp\Engine_4824_9aee79386c304d14a8d75e3ef7fa6947_\Engine_18528_ea3ec6129c9a44d488c2cd8d874b9bb2_.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Scater Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Scater Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Predicting_Sales_for_catalog_launch</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
